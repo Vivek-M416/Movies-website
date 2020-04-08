@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+   {% extends 'genre/base.html'%}
+</head>
+<body>
+     {% block content %}
+         <from action="" mothod="post">
+             {csrf_token}
+             username:
+             <input type="text" name="username">
+             <br/>
+
+             Email:
+             <input type="text" name="email">
+             <br/>
+
+             password:
+             <input type="password" name="password">
+             <br/>
+
+             <input type="submit" value="submit">
+         </from>
+     {% endblock %}
+</body>
+</html>
